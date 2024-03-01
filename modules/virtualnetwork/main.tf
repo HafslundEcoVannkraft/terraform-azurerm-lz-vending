@@ -184,6 +184,6 @@ resource "azapi_resource" "vhubconnection" {
   ignore_body_changes = each.value.vwan_security_configuration.routing_intent_enabled ? ["properties.routingConfiguration"] : []
 }
 
-output routing_intent_enabled {
+output virtual_networks {
   value = var.virtual_networks
 }
