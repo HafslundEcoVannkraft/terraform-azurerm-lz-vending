@@ -11,3 +11,7 @@ module "virtualnetwork" {
     module.resourcegroup_networkwatcherrg,
   ]
 }
+
+output "virtual_networks" { // this is inside main lz-vending module
+  value = module.virtualnetwork.virtual_networks
+}
