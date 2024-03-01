@@ -13,5 +13,5 @@ module "virtualnetwork" {
 }
 
 output "virtual_networks" { // this is inside main lz-vending module
-  value = module.virtualnetwork.virtual_networks
+  value = module.virtualnetwork[0].virtual_networks
 }
